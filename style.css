@@ -1,0 +1,210 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar h1 {
+    flex: 1;
+    font-size: 24px;
+}
+
+.navbar input, .navbar select {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+.navbar button {
+    background: #16a34a;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    opacity: 0.9;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: #f3f4f6;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-card h2 {
+    color: #1e293b;
+    font-size: 24px;
+}
+
+/* BOOK CONTAINER */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.book-card {
+    background: #fef3c7;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 10px;
+}
+
+.book-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.book-info p {
+    font-size: 14px;
+    color: #334155;
+}
+
+.category {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    background: #e0f2fe;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* BUTTONS IN CARD */
+.book-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.borrow-btn, .return-btn {
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.borrow-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.return-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.book-actions button:hover {
+    opacity: 0.9;
+}
+
+/* MODALS */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-content input, .modal-content select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#saveBookBtn {
+    background: #16a34a;
+    color: white;
+}
+
+#closeModalBtn, #closeHistoryBtn {
+    background: #dc2626;
+    color: white;
+}
+
+#saveBookBtn:hover, #closeModalBtn:hover, #closeHistoryBtn:hover, #confirmPaymentBtn:hover {
+    opacity: 0.9;
+}
+
+/* HISTORY ITEMS */
+.history-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* FINE DISPLAY */
+#fineAmount {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #dc2626;
+}
+
+#confirmPaymentBtn {
+    background: #16a34a;
+    color: white;
+}
